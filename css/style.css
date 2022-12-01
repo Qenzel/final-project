@@ -1,0 +1,181 @@
+address, article, aside, blockquote, body, cite,
+div, dl, dt, dd, em, figcaption, figure, footer,
+h1, h2, h3, h4, h5, h6, header, html, main, img, li,
+nav, section, ul, span, ol, p {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #023047;
+}
+
+.header {
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 5px 10px 10px #011925 inset, 5px 10px 10px #011925;
+}
+
+nav ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    width: 95%;
+    min-width: 640px;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+}
+
+body > header {
+    height: 50%;
+}
+
+.replay {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #011925;
+    background-color: #011925;
+    box-shadow: 5px 10px 10px #011925 inset, 3px 5px 5px #011925;
+    color: white;
+}
+
+hr {
+    height: 3px;
+    width: 800px;
+    background-color: #fb8500;
+}
+
+hr.about {
+    margin-top: 280px;
+}
+
+div {
+    height: 40px;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 1.4em;
+    line-height: 2em;
+    text-align: left;
+}
+
+body > header > nav li {
+    width: 10%;
+    background-color: orangered;
+}
+
+header > nav a {
+    width: 100%;
+    color: white;
+    padding: 5px;
+}
+
+nav.upper-menu li {
+    display: block;
+    float: left;
+}
+
+body {
+    color: #fb8500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body > main {
+    display: block;
+    clear: left;
+    margin-top: 25px;
+}
+
+main > nav.lower-menu {
+    display: block;
+    float: left;
+    width: 20%;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+main > nav h2 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+main > nav.lower-menu li {
+    padding-top: 10px;
+}
+
+main > nav.lower-menu li a {
+    color: rgb(129, 129, 129);
+}
+
+main > nav.lower-menu li a:hover {
+    text-decoration: underline;
+}
+
+main > article {
+    display: block;
+    float: left;
+    width: 50%;
+    margin-right: 25px;
+}
+
+p {
+    display: block;
+}
+
+.yt-vid1 {
+    position: relative;
+    right: -35%;
+    border: solid 10px;
+}
+
+.yt-vid2 {
+    position: relative;
+    right: -35%;
+    border: solid 10px;
+}
+
+
+.yt-titles {
+    position: relative;
+    right: -35%;
+}
+
+
+body > footer > div {
+    position: relative;
+    right: -22%;
+    margin-top: 20px;
+    display: block;
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    color: silver;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}

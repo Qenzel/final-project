@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.grass, .sky, .road {
+    position: relative;
+}
+
+.sky {
+    height: 40%;
+    background: skyblue;
+}
+
+.grass {
+    height: 30%;
+    background: seagreen;
+}
+
+.road {
+    height: 30%;
+    background: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    width: 100%;
+}
+
+.road-lines {
+    box-sizing: border-box;
+    border: 5px dashed white;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+.mario {
+    position: absolute;
+    top: -60px;
+    height: 165px;
+    width: 165px;
+    animation: drive 6s ease;
+}
+
+.green-shell {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: -200px;
+    animation: shell 3.3s 1.3s ease;
+}
+
+@keyframes drive {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(500px);
+    }
+
+    40% {
+        transform: translateX(500px) translateY(-300px) rotate(-360deg);
+    }
+
+    80% {
+        transform: translateX(500px) translateY(-300px) rotate(-360deg) translateY(700px);
+    }
+
+    100% {
+        transform: translateX(500px) translateY(-300px) rotate(-360deg) translateY(700px);
+    }
+}
+
+@keyframes shell {
+    from {transform: translateX(0);}
+    to {transform: translateX(3000px);}
+}
