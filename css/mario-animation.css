@@ -79,3 +79,32 @@ html, body {
     from {transform: translateX(0);}
     to {transform: translateX(3000px);}
 }
+
+@media (max-width: 500px) {
+    @keyframes drive {
+        0% {
+            transform: translateX(0);
+        }
+    
+        33% {
+            transform: translateX(300px);
+        }
+    
+        40% {
+            transform: translateX(300px) translateY(-300px) rotate(-360deg);
+        }
+    
+        80% {
+            transform: translateX(300px) translateY(-300px) rotate(-360deg) translateY(700px);
+        }
+    
+        100% {
+            transform: translateX(300px) translateY(-300px) rotate(-360deg) translateY(700px);
+        }
+    }
+    
+    @keyframes shell {
+        from {transform: translateX(0);}
+        to {transform: translateX(2000px);}
+    }
+}

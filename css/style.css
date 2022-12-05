@@ -1,7 +1,34 @@
-address, article, aside, blockquote, body, cite,
-div, dl, dt, dd, em, figcaption, figure, footer,
-h1, h2, h3, h4, h5, h6, header, html, main, img, li,
-nav, section, ul, span, ol, p {
+address,
+article,
+aside,
+blockquote,
+body,
+cite,
+div,
+dl,
+dt,
+dd,
+em,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+main,
+img,
+li,
+nav,
+section,
+ul,
+span,
+ol,
+p {
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -13,12 +40,12 @@ body {
 }
 
 .header {
-    width: 1000px;
+    width: 100%;
     height: 100px;
+    padding-left: 10px;
     text-align: center;
     font-size: 80px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 5px 10px 10px #011925 inset, 5px 10px 10px #011925;
 }
 
 nav ul {
@@ -44,7 +71,7 @@ body {
     min-height: 100%;
 }
 
-body > header {
+body>header {
     height: 50%;
 }
 
@@ -69,11 +96,12 @@ hr.about {
 }
 
 div {
-    height: 40px;
+    height: 100%;
     width: 100%;
     display: table-cell;
     vertical-align: middle;
 }
+
 
 h1 {
     font-size: 1.4em;
@@ -81,12 +109,13 @@ h1 {
     text-align: left;
 }
 
-body > header > nav li {
-    width: 10%;
+body>header>nav li {
+    width: auto;
+    padding: 0 5px 0 5px;
     background-color: orangered;
 }
 
-header > nav a {
+header>nav a {
     width: 100%;
     color: white;
     padding: 5px;
@@ -102,13 +131,13 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body > main {
+body>main {
     display: block;
     clear: left;
     margin-top: 25px;
 }
 
-main > nav.lower-menu {
+main>nav.lower-menu {
     display: block;
     float: left;
     width: 20%;
@@ -116,24 +145,24 @@ main > nav.lower-menu {
     margin-top: 10px;
 }
 
-main > nav h2 {
+main>nav h2 {
     padding-top: 20px;
     padding-bottom: 5px;
 }
 
-main > nav.lower-menu li {
+li {
     padding-top: 10px;
 }
 
-main > nav.lower-menu li a {
+li a {
     color: rgb(129, 129, 129);
 }
 
-main > nav.lower-menu li a:hover {
+li a:hover {
     text-decoration: underline;
 }
 
-main > article {
+main>article {
     display: block;
     float: left;
     width: 50%;
@@ -144,26 +173,23 @@ p {
     display: block;
 }
 
-.yt-vid1 {
-    position: relative;
-    right: -35%;
-    border: solid 10px;
+div.yt-vid1 {
+    float: left;
 }
 
-.yt-vid2 {
-    position: relative;
-    right: -35%;
-    border: solid 10px;
+div.yt-vid2 {
+    float: left;
 }
 
 
 .yt-titles {
+    width: 100%;
     position: relative;
-    right: -35%;
+    float: left;
 }
 
 
-body > footer > div {
+body>footer>div {
     position: relative;
     right: -22%;
     margin-top: 20px;
@@ -178,4 +204,70 @@ body > footer > div {
 footer a {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 500px) {
+
+    body {
+        padding-left: 10px;
+    }
+
+    .header {
+        width: auto;
+        height: 100px;
+        font-size: 2rem;
+    }
+
+    main>nav.lower-menu {
+        display: none;
+    }
+
+    .mario {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 95vw;
+        height: 75vh;
+    } 
+
+    div.yt-vid1 {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+
+    .first-vid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.yt-vid2 {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+
+    .second-vid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        font-size: 15px;
+        float: left;
+    }
 }
